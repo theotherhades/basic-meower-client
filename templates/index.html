@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <!-- python -m http.server 80 -->
+    <head>
+        <title>Meower Flask</title>
+        <script type="module" src="{{ url_for('static', filename = 'js/main.js') }}"></script>
+    </head>
+    <body>
+        <noscript>
+            Please enable javascript
+        </noscript>
+
+        <div id="loginscreen">
+            <h1>Meower Client</h1>
+
+            <p>Username</p>
+            <input type="text" id="username">
+            <br>
+            <p>Password</p>
+            <input type="password" id="pswd">
+            <br>
+            <input type="button" value="Login" id="loginbutton">
+        </div>
+
+        <div id="makepost">
+            <input type="text" id="postTextInput">
+            <input type="button" value="Post" id="postSubmit">
+        </div>
+    </body>
+</html>
